@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>AddressSearch</title>
+</head>
+
+<body>
+  <h1>住所検索</h1>
+  <div>
+
+    <p>
+      <label>郵便番号<input id="zipcode" type="text" size="10" maxlength="8" onchange="javascript:getAddName(this.value)"></label>
+      <!--callbackの譲受⇒ onchange="javascript:getAddName(this.value) -->
+      <button id="btn">検索</button>
+      <!-- クリックしてイベントを起こすためのボタン -->
+    </p>
+
+    <p>
+      <label>都道府県 <input id="add_prefecture" type="text" size="10"></label>
+      <!-- 都道府県のインプットタグ -->
+    </p>
+
+    <p>
+      <label>市区町村 <input id="add_city" type="text" size="10"></label>
+      <!-- 市区町村のインプットタグ -->
+    </p>
+
+    <p>
+      <label>住所<input id="add_address" type="text" size="10"></label>
+      <!-- 住所のインプットタグ -->
+    </p>
+
+  </div>
+
+  <script src="script.js"></script>
+  <!-- JavaScriptファイル読み込み （bodyタグ終了直前の位置）-->
+</body>
+
+</html>
